@@ -1,0 +1,81 @@
+/* PARTE DAS CORES */
+:root {
+    --cor-fundo: #282424;
+    --cor-primaria: #601414;
+    --cor-botoes: #d0aa3c;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Centraliza um "card" no meio da tela e mantém o fundo vazio ao redor */
+body {
+    background-color: var(--cor-fundo);
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px; /* espaço em telas pequenas */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 55% 50%;
+}
+
+.container {
+    background-color: rgba(96, 20, 20, 0.5); 
+    width: min(300px, 400px);
+    height: 300px;
+    border-radius: 12px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.45);
+    backdrop-filter: blur(6px); 
+    border: 1px solid rgba(255,255,255,0.06);
+}
+
+header {
+    width: 80;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.logo_imagem {
+    width: 10px;
+    width: 130px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.botoes {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 0;
+    border-radius: 10px;
+    margin: 0;
+}
+
+.botao {
+    background-color: var(--cor-botoes);
+    color: #fff;
+    padding: 10px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.botoes a:hover {
+    color: var(--cor-primaria); /* Muda a cor quando passa o mouse por cima do cabeçalho */
+}
